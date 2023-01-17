@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mini TextGame🎮</h1>
+    </header>
+    <section>
+        <div id="sectHead">
+            <h1 id="alphaletter">Alphabhets<span>🧮</span></h1>
+            <div id="score">
+                <span id="scoreH1">Score</span><span id="count">0</span>
+            </div>
+        </div>
+        
+    <div id="buttonDiv">
+    <div>
+    <button class="button" onclick="setButton(event)">a</button>
+    <button class="button" onclick="setButton(event)">b</button>
+    <button class="button" onclick="setButton(event)">c</button>
+    <button class="button" onclick="setButton(event)">d</button>
+    <button class="button" onclick="setButton(event)">e</button>
+    <button class="button" onclick="setButton(event)">f</button>
+    <button class="button" onclick="setButton(event)">g</button>
+    <button class="button" onclick="setButton(event)">h</button>
+    <button class="button" onclick="setButton(event)">i</button>
+    <button class="button" onclick="setButton(event)">j</button>
+    <button class="button" onclick="setButton(event)">k</button>
+    <button class="button" onclick="setButton(event)">l</button>
+    <button class="button" onclick="setButton(event)">m</button>
+    </div>
+    <div>
+    <button class="button" onclick="setButton(event)">n</button>
+    <button class="button" onclick="setButton(event)">o</button>
+    <button class="button" onclick="setButton(event)">p</button>
+    <button class="button" onclick="setButton(event)">q</button>
+    <button class="button" onclick="setButton(event)">r</button>
+    <button class="button" onclick="setButton(event)">s</button>
+    <button class="button" onclick="setButton(event)">t</button>
+    <button class="button" onclick="setButton(event)">u</button>
+    <button class="button" onclick="setButton(event)">v</button>
+    <button class="button" onclick="setButton(event)">w</button>
+    <button class="button" onclick="setButton(event)">x</button>
+    <button class="button" onclick="setButton(event)">y</button>
+    <button class="button" onclick="setButton(event)">z</button>
+    </div>
+    </div>
+
+    <h1 id="Word">Make a Word</h1>
+    <div id="wordDiv">
+        <button id="createRandom" onclick="createRandomStr(event)">Create</button>
+        <div id="randomString"></div>
+        <div id="eval"></div>
+    </div>
+
+    <div id="mainDiv">
+        <h1 id="mainDivH1">Enter your Alphabhets<span>🤜</span></h1>
+        <!-- <input type="text" id="alphas"> -->
+        <div id="alphas"></div> 
+    </div>
+        <button id="check" onclick="setCheck(event)">Check</button>   
+        <button id="clear" onclick="setClear(event)">Clear</button>
+        
+    <div id="h1history">
+        <h2>History</h2>
+        <ul id="history" class="history"></ul>
+        <button id="clearHistory" onclick="clearHistory(event)">Clear</button>
+    </div>
+    </section>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>

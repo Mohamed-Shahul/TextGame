@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    user-select: none;
+}
+header{
+    padding-top: 10px;
+}
+button{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    transform: scale(1.14);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px black;
+    animation: move 2s linear infinite;
+}
+@keyframes move{
+    50%{
+        transform: translateY(-10px );
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+section{
+    width: 1200px;
+    height: 100vh;
+    margin: 0px auto;
+}
+#alphaletter{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+}
+#sectHead{
+    display: flex;
+}
+#score{
+    margin: 10px 0px 0px 500px;
+    width:150px;
+    height: 50px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+}
+#scoreH1{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 30px;
+    padding: 0px 10px 0px 5px;
+    border-radius: 5px;
+}
+#buttonDiv{
+    width: 100%;
+    padding: 10px 0px 15px 20px;
+}
+#buttonDiv div{
+    margin-top: 12px;
+}
+#buttonDiv button{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    box-shadow: 4px 4px black;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+#buttonDiv button:hover
+{
+    cursor: pointer;
+    transform: scale(1.14);
+}
+
+#Word{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin: 10px 5px 20px 0px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+}
+#wordDiv{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#createRandom{
+    width: 80px;
+    height: 30px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+#randomString{
+    font-family: 'Inspiration', cursive;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    width: 150px;
+    height: 60px;
+    margin-top: -5px;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+#mainDiv{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+#mainDivH1{
+    margin: 10px 5px 25px 0px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+} 
+#mainDiv span{
+    margin-left: 20px;
+}
+#alphas{
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    width: 300px;
+    height: 50px;
+    margin: 10px 10px 0px 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+}
+#check{
+    width: 80px;
+    height: 30px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    position: absolute;
+    right: 500px;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+}
+#clear{
+    width: 80px;
+    height: 30px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    position: absolute;
+    right: 700px;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.tickDiv{
+   border: 5px solid green;
+}
+.wrongDiv{
+    border: 5px solid red;
+}
+.removeBorder{
+    border: none;
+}
+
+
+/* History */
+#h1history{
+    position: absolute;
+    top: 70px;
+    right: 120px;
+} 
+.history{
+    width: 200px;
+    height: 150px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    box-shadow: 4px 4px black;
+}
+#h1history h2{
+    margin: 10px 5px 5px 0px;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 35px;
+}
+#clearHistory{
+    width: 80px;
+    height: 30px;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.historyLi{
+    margin: 5px 5px 0px 0px;
+    padding: 0px 0px 0px 5px;
+    border-radius: 5px;
+    color: white;
+    background-image: url(./images/download\ \(2\).jfif);
+    background-position: center;
+}
+
+#count{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+}
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width:670px) {
+    header h1{
+        font-size: 20px;
+    }
+    #alphaletter{
+        font-size: 15px;
+    }
+    #score {
+        margin: 10px 0px 0px 160px;
+    }
+    #buttonDiv{
+        width: 100vw;
+    }
+    #buttonDiv button{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+    }
+    #Word{
+        font-size: 15px;
+    }
+    #wordDiv {
+        width: 100vw;
+    }
+    #createRandom{
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+    }
+    #randomString{
+        width: 100px;
+        height: 50px;
+        font-size: 30px;
+        padding: 5px 0px 0px 0px;
+    }
+    #mainDiv{
+        width: 100vw;
+        display: block;
+    }
+    #alphas{
+        width: 150px;
+        margin-left: 20px;
+    }
+    #mainDivH1 {
+        font-size: 15px;
+    }
+    #mainDiv span {
+        margin-left: 10px;
+    }
+    #check {
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+        position: absolute;
+        top: 365px;
+        left: 180px;
+        margin-top: 5px;
+    }
+    #clear {
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+        position: absolute;
+        left: 240px;
+        top: 366px;
+        margin-top: 5px;
+    }
+    #h1history h2 {
+        font-size: 15px;
+    }
+    #h1history {
+        position: absolute;
+        top: 430px;
+        left: 21px;
+    }
+    .history {
+        width: 200px;
+        height: 100px;
+    }
+    #clearHistory {
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+        position: absolute;
+        left: 130px;
+        top: 0;
+    }
+    #score{
+        width: 100px;
+        height: 35px;
+    }
+    #scoreH1{
+        font-size: 17px;
+    }
+    #count {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:400px){
+    #score{
+        margin: 10px 0px 0px 120px;
+        width: 100px;
+        height: 30px;
+    }
+    #alphas{
+        margin: -8px 10px 10px 20px;
+    }
+    #buttonDiv div {
+        margin-top: 12px;
+        width: 100vw;
+        display: contents;
+    }
+    #h1history {
+        top: 425px;
+    }
+    #clearHistory {
+        left: 140px;
+        top: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
